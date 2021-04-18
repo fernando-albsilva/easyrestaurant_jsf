@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.textoTelaLogIn{
+
+	font-size: 50px;
+}
+
+body{
+	font-family: Arial;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.laranja{
+	color:#f2a22c;
+}
+
+.preto{
+	color:black;
+}
+
+h1 {
+	color:red;
+}
+
+.campoInputLogIn {
+	
+	background-color: black;
+	border-radius: 10px;
+	color :white;
+	text-decoration: none;
+	border:none!important;
+	padding:15px 30px;
+	
+	height:25px;
+	font-size:20px;
+	 outline-style: none;
+	 margin: 10px 0px 10px 0px;
+	 height: 40px;
+	 width:300px;
+}
+
+.botaoLogIn{
+	background-color: #f2a22c;
+	border-radius: 10px;
+	color : white;
+	border:none;
+	font-size:20px;
+	padding:15px;
+	width: 300px;
+	margin-top:20px;
+}
+#containerLogIn{
+	width:400px;
+	margin-left: auto;
+	margin-right: auto;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	
+}
+#formLogin{
+	
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	
+	
+}
+
+#containerTextoLogIn{
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	justify-content:center;
+	width: inherit;
+}
+
+

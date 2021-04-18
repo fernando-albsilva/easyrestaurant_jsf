@@ -16,10 +16,14 @@
 	
 	<h:form id="formLogin" class="formLogin">
 		
-	         <h:inputText class="campoInputLogIn" id="titulo" value="#{livroBean.livro.titulo}"/>
-				        
-	         <h:inputSecret class="campoInputLogIn" type="password" id="isbn" value="#{livroBean.livro.isbn}"/>
-					                  
+	         <h:inputText  class="campoInputLogIn" id="userName" value="#{livroBean.livro.titulo}"  >
+				    <f:passThroughAttribute name="placeholder" value="Username" />
+			</h:inputText>    
+			
+	         <h:inputSecret class="campoInputLogIn" type="password" id="userPassword" value="#{livroBean.livro.isbn}">
+				 <f:passThroughAttribute name="placeholder" value="Password" />
+			</h:inputSecret>  	
+			                  
 	         <h:commandButton class="botaoLogIn" value="Enviar" action="#{livroBean.gravar}"/>
 						   
 	</h:form>

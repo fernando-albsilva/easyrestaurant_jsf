@@ -5,7 +5,7 @@
 	font-size: 50px;
 }
 
-body{
+.ui-layout-unit .ui-layout-unit-content{
 	font-family: Arial;
 	display: flex;
 	flex-wrap: wrap;

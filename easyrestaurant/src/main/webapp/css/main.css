@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#containerMenuEsquerdo{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: rgba(242, 162, 44, 0.58);
+	height: inherit;
+}
+h1{
+	color: #AF6B06;
+	font-size: 30px;
+	
+}
+
+.botao {
+	
+	border-radius: 15px;
+	font-size:20px;
+	border:none;
+	padding:15px;
+	width: 300px;
+	width: 220px;
+}
+
+.botao.menu-esquerdo{
+	color : white;
+	background-color: #f2a22c;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	
+}
+
+.botao.menu-superior{
+	color : white;
+	background-color: #ad6700;
+	margin-bottom: 20px;
+	margin-top:20px;
+	margin-right:20px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	
+	
+}
+
+
+#containerMenuSuperior{
+	background-color: #F2A22C;
+	height: 82px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-between;
+	
+}

@@ -74,24 +74,49 @@ h1{
 #containerConteudoCentro{
 	display:flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	text-align:center;
-	justify-content: space-between;
+	justify-content: space-around;
 	border-radius: 10px;
 	border:2px solid black;
+	background: linear-gradient(to bottom, #efe4d5 5%, #ffe2b2 100%);
+	height: inherit;
 	
 	
 }
-.botao.conteudo-centro{
-	background-image:url("../resources/images/mesaRestaurante100px.png");
-	background-repeat:no-repeat;
-	height: 120px;
-	width: 100px;
-	padding-top: 90px;
-	margin:30px;
+
+#formCadastro{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align:center;
+	justify-content: space-around;
+}
+.campoInputCadastro{
+	background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    border: none!important;
+    padding: 15px 30px;
+    height: 25px;
+    font-size: 20px;
+    outline-style: none;
+    
+    height: 40px;
+    width: 300px;
 	
 }
+.form-botao{
+	
+	margin:20px 0px 20px 0px;
+	background: linear-gradient(to bottom, #ffbb53 5%, #ff9e00 100%);
+    background-color: #ffd042;
+    color: white;
+}
+
 #containerMenuDireito{
 	display:flex;
 	flex-wrap: wrap;
@@ -139,6 +164,4 @@ h1{
 div {
  border:none!important;
 }
-
-
 

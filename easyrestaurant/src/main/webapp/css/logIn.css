@@ -52,6 +52,11 @@ h1 {
 	width: 300px;
 	margin-top:20px;
 }
+
+.botaoLogIn {
+	
+	cursor: pointer;
+}
 #containerLogIn{
 	width:400px;
 	margin-left: auto;

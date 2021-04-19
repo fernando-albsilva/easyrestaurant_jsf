@@ -26,8 +26,11 @@ h1{
 }
 
 .botao.menu-esquerdo{
+	
+	background: linear-gradient(to bottom, #ffbb53 5%, #ff9e00 100%);
+	background-color:#ffd042;
 	color : white;
-	background-color: #f2a22c;
+	/*background-color: #f2a22c;*/
 	margin-bottom: 10px;
 	font-weight: bold;
 	font-size: 20px;
@@ -37,10 +40,12 @@ h1{
 
 .botao.menu-superior{
 	color : white;
-	background-color: #ad6700;
+    background: linear-gradient(to bottom, #ff9a00 5%, #d06000 100%);
+	background-color: #ff9a00;
 	margin-bottom: 20px;
 	margin-top:20px;
 	margin-right:20px;
+	margin-left:20px;
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
@@ -58,4 +63,69 @@ h1{
 	text-align: center;
 	justify-content: space-between;
 	
+}
+
+#containerConteudoCentro{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	text-align:center;
+	justify-content: space-between;
+	
+	
+}
+.botao.conteudo-centro{
+	background-image:url("../resources/images/mesaRestaurante100px.png");
+	background-repeat:no-repeat;
+	height: 120px;
+	width: 100px;
+	padding-top: 90px;
+	margin:30px;
+	
+}
+#containerMenuDireito{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: rgba(242, 162, 44, 0.58);
+	height: inherit;
+}
+
+
+#containerRodape{
+	
+	
+	text-align:center;
+	background-color: #F2A22C;
+	height: 165px;
+	
+	
+}
+
+#containerRodape h1{
+ font-size:20px;
+ padding-top:20px;
+}
+
+#containerInformacoes{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	text-align:center;
+	justify-content: space-around;
+	
+	
+}
+.informacoes{
+	font-size: 15px;
+	margin:15px 30px 15px 30px;
+}
+
+
+div {
+ border:none!important;
 }

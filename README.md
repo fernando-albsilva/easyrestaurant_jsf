@@ -20,4 +20,4 @@ Pequenos restaurantes que querem um simples sistema de gestão de conta do clien
 ![tela_principal](https://github.com/fernando-albsilva/easyrestaurant_jsf/blob/master/easyrestaurant/prototipo_tela/home.png)
 
 ## Tela de Cadastro de Produto.
-![tela_de_cadastro_produto](https://github.com/fernando-albsilva/easyrestaurant_jsf/blob/master/easyrestaurant/prototipo_tela/produtoCadastro.png)
+![tela_de_cadastro_produto](https://github.com/fernando-albsilva/easyrestaurant_jsf/blob/master/easyrestaurant/prototipo_tela/produtoCadastro1.png)

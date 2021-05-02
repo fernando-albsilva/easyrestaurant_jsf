@@ -8,13 +8,17 @@
 
 <div id="containerMenuSuperior">
 
-		<h:graphicImage  value = "../../../resources/images/LogoEasyRestaurantInterface.png"/> 
+		<h:graphicImage  value = "../../resources/images/LogoEasyRestaurantInterface.png"/> 
 		
 	<div>
-	
-		<h:button class="botao menu-superior" value="Receitas" href="../../index.xhtml" />
-		<h:button class="botao menu-superior" value="Sair" href="../../index.xhtml" />
-		
+	<h:form>
+		<h:commandButton class="botao menu-superior" value="Receita" action="#{InterfaceMainBean.botaoReceita}" />	
+	</h:form>
+	</div>
+	<div>
+	<h:form>
+		<h:commandButton class="botao menu-superior" value="Home" action="#{InterfaceMainBean.botaoHome}" />	
+	</h:form>
 	</div>
 		
 </div>

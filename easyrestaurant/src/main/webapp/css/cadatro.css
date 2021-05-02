@@ -73,26 +73,27 @@ h1{
 
 #containerConteudoCentro{
 	display:flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: column;
 	align-items: center;
 	text-align:center;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-radius: 10px;
 	border:2px solid black;
-	background: linear-gradient(to bottom, #efe4d5 5%, #ffe2b2 100%);
+	/* background: linear-gradient(to bottom, #efe4d5 5%, #ffe2b2 100%); */
 	height: inherit;
 	
 	
 }
 
-#formCadastro{
+.formLogin{
 	display:flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: column;
 	align-items: flex-start;
 	text-align:center;
-	justify-content: space-around;
+	justify-content: space-between;
+		
 }
 .campoInputCadastro{
 	background-color: black;
@@ -104,7 +105,7 @@ h1{
     height: 25px;
     font-size: 20px;
     outline-style: none;
-    
+    margin: 10px 0px 10px 0px;
     height: 40px;
     width: 300px;
 	

@@ -9,10 +9,27 @@
 <div id="containerMenuEsquerdo">
 
 		<h1> Cadastro </h1>
-		<h:button class="botao menu-esquerdo" value="Produto" href="../../index.xhtml" />
-		<h:button class="botao menu-esquerdo" value="Garcom" href="../../index.xhtml" />
-		<h:button class="botao menu-esquerdo" value="Mesa" href="../../index.xhtml" />
-		<h:button class="botao menu-esquerdo" value="Usuario" href="../../index.xhtml" />
+	
+		<div>
+			<h:form>
+				<h:commandButton class="botao menu-esquerdo" value="Produto" action="#{InterfaceMainBean.botaoProduto}" />	
+			</h:form>
+		</div>
+		
+		<div>
+			<h:form>
+				<h:commandButton class="botao menu-esquerdo" value="Garçom" action="#{InterfaceMainBean.botaoGarcom}" />	
+			</h:form>
+		</div>
+		
+		<div>
+			<h:form>
+				<h:commandButton class="botao menu-esquerdo" value="Usuario" action="#{InterfaceMainBean.botaoUsuario}" />	
+			</h:form>
+		</div>
+		
+		
+		
 		
 		
 </div>

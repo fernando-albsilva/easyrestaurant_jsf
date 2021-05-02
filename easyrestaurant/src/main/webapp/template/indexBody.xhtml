@@ -16,15 +16,15 @@
 	
 	<h:form id="formLogin" class="formLogin">
 		
-	         <h:inputText  class="campoInputLogIn" id="userName" value="#{livroBean.livro.titulo}"  >
+	 		 <h:inputText  class="campoInputLogIn" id="userName" value="#{LogInBean.userName}"  > 
 				    <f:passThroughAttribute name="placeholder" value="Username" />
 			</h:inputText>    
 			
-	         <h:inputSecret class="campoInputLogIn" type="password" id="userPassword" value="#{livroBean.livro.isbn}">
-				 <f:passThroughAttribute name="placeholder" value="Password" />
+	         <h:inputSecret class="campoInputLogIn" type="password" id="userPassword" value="#{LogInBean.password}">
+				 <f:passThroughAttribute name="placeholder" value="password" />
 			</h:inputSecret>  	
 			                  
-	         <h:commandButton class="botaoLogIn" value="Enviar" action="#{livroBean.gravar}"/>
+	         <h:commandButton class="botaoLogIn" value="Enviar" action="#{LogInBean.autentica}"/>
 						   
 	</h:form>
 </h:panelGroup>

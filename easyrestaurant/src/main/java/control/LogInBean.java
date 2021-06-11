@@ -1,6 +1,11 @@
 package control;
 
+import java.sql.SQLException;
+
 import javax.faces.bean.ManagedBean;
+import dao.*;
+import model.Garcom;
+
 import javax.faces.bean.ViewScoped;
 
 @ManagedBean(name = "LogInBean")
@@ -26,7 +31,7 @@ public class LogInBean {
 		this.password = password;
 	}
 
-	public String autentica() {
+	public String autentica() throws SQLException {
 		if( this.userName.equals("fernando") && this.password.equals("200790"))
 		{
 			
@@ -42,6 +47,13 @@ public class LogInBean {
 			System.out.println(this.userName);
 			System.out.println(this.password);
 //			return "usuario incorreto";
+			
+			Conexao conexao = new Conexao();
+			GarcomDAO garcomDao = new GarcomDAO(conexao.fazerConexao());
+			Garcom garcom = new Garcom();
+			garcom.setNome("joanas");
+			garcom.setId_garcom("2");
+			garcomDao.GarcomUpdate(garcom);
 			
 			return "<script> alert('usuario nao autenticado') </script>";
 		}

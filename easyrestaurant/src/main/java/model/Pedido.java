@@ -103,7 +103,7 @@ public class Pedido {
 		    	System.out.println("***************************************************************");
 		    	System.out.printf("Produto %d : %s\n", i, this.lista_produto.get(i).getNome());
 		    	System.out.printf("valor : R$%.2f\n",  this.lista_produto.get(i).getValor());
-		    	System.out.printf("Descrição : %s\n", this.lista_produto.get(i).getDescricao());
+		    	
 		    }
 		    
 		    System.out.println("***************************************************************");

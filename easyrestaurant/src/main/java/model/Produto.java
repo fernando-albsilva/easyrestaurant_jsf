@@ -4,19 +4,34 @@ public class Produto {
 
 	private String id_produto;
 	private String nome;
-	private double valor;
-	private double custo;
-	private String descricao;
+	private float valor;
+	private float custo;
+
 	
-	public Produto (String id_produto, String nome, double valor, double custo, String descricao) {
+	public Produto (String id_produto, String nome, float valor, float custo) {
 		
 		setId_produto(id_produto);
 		setNome(nome);
 		setValor(valor);
 		setCusto(custo);
-		setDescricao(descricao);
+		
 		
 	}
+	
+		public Produto (String nome, float valor, float custo) {
+		
+		setNome(nome);
+		setValor(valor);
+		setCusto(custo);
+		
+		
+	}
+		public Produto () {
+			
+			
+			
+			
+		}
 
 	public String getId_produto() {
 		return id_produto;
@@ -34,30 +49,23 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public double getValor() {
+	public float getValor() {
 		return valor;
 	}
 
-	public void setValor(double valor) {
+	public void setValor(float valor) {
 		this.valor = valor;
 	}
 
-	public double getCusto() {
+	public float getCusto() {
 		return custo;
 	}
 
-	public void setCusto(double custo) {
+	public void setCusto(float custo) {
 		this.custo = custo;
 	}
 
-	public String getDescricao() {
-		return descricao;
-	}
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-	
 	
 	
 }

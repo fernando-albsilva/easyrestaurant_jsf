@@ -14,26 +14,25 @@
 		
 			<h1> Cadastro Garçom</h1>
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{GarcomBean.nome}"  >
+	         <h:inputText  class="campoInputCadastro" id="nome" value="#{garcomBean.nomeGarcom}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
 			</h:inputText>    
-			
-			                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{GarcomBean.gravar}"/>
+			 
+				                  
+	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{garcomBean.GarcomCreate}"/>
 						   
 		</h:form>
 	
-		
-		<h:form id="formEditaGarcom" class="formLogin">
+	<!-- 	<h:form id="formEditaGarcom" class="formLogin">
 		
 			<h1> Edição Garçom</h1>
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{GarcomBean.nome}"  >
+	         <h:inputText  class="campoInputCadastro" id="nome" value="#{GarcomBean.nomeGarcom}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
 			</h:inputText>    
 			
 			                  
-	         <h:commandButton class="botao form-botao" value="Editar" action="#{GarcomBean.gravar}"/>
+	         <h:commandButton class="botao form-botao" value="Editar" action="#{GarcomBean.GarcomUpdate}"/>
 			                  
 
 						   
@@ -44,12 +43,12 @@
 		
 			<h1> Buscar Garçom</h1>
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{GarcomBean.nome}"  >
+	         <h:inputText  class="campoInputCadastro" id="nome" value="#{GarcomBean.nomeGarcom}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
 			</h:inputText>    
 			
 			                  
-	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.buscar}"/>
+	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.GarcomSearch}"/>
 						   
 		</h:form>
 		
@@ -58,14 +57,17 @@
 		
 			<h1> Excluir Garçom</h1>
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{GarcomBean.nome}"  >
+	         <h:inputText  class="campoInputCadastro" id="nome" value="#{GarcomBean.nomeGarcom}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
 			</h:inputText>    
 			
 			                  
-	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.excluir}"/>
+	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.GarcomDelete}"/>
 						   
-		</h:form>
+		</h:form> -->
+		
+		
+	
 		
 		
 </div>

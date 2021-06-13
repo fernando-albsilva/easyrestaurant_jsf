@@ -6,6 +6,10 @@ public class Garcom {
 	private String nome;
 	
 	public Garcom () {}
+	
+	public Garcom (String nome) {
+	 this.setNome(nome);
+	}
 
 	public String getId_garcom() {
 		return id_garcom;

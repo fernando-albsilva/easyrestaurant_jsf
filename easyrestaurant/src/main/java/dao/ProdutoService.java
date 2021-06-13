@@ -10,14 +10,14 @@ import model.Produto;
 @ApplicationScoped
 public class ProdutoService {
 
-    List<Produto> produto;
+    ArrayList<Produto> produto;
 
     
     public ProdutoService() {
     	produto = new ArrayList<>();
     	for (int i  = 0; i < 20 ; i++) {
 //    		(String id_produto, String nome, double valor, double custo, String descricao)
-    		produto.add(new Produto((1+i)+"", "coca-cola"+(1+i), 5, 3,"refrigerante"));
+//    		produto.add(new Produto((1+i)+"", "coca-cola"+(1+i), 5, 3,"refrigerante"));
 			
 		}
 

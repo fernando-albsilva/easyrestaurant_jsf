@@ -6,70 +6,82 @@
 	xmlns:p="http://primefaces.org/ui">
 
 
-<div id="containerConteudoCentro">
+	<div id="containerConteudoCentro">
 
-				
-		
+
+
 		<h:form id="formCadastroGarcom" class="formLogin">
-		
-			<h1> Cadastro Garçom</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="nome" value="#{garcomBean.nomeGarcom}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
-			</h:inputText>    
-			 
-				                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{garcomBean.GarcomCreate}"/>
-						   
-		</h:form>
-	
-	<!-- 	<h:form id="formEditaGarcom" class="formLogin">
-		
-			<h1> Edição Garçom</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="nome" value="#{GarcomBean.nomeGarcom}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
-			</h:inputText>    
-			
-			                  
-	         <h:commandButton class="botao form-botao" value="Editar" action="#{GarcomBean.GarcomUpdate}"/>
-			                  
 
-						   
+			<h1>Cadastro Garçom</h1>
+			<h2>Nome :</h2>
+			<h:inputText class="campoInputCadastro" id="nome"
+				value="#{garcomBean.nomeGarcom}">
+				<f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
+			</h:inputText>
+
+
+			<h:commandButton class="botao form-botao" value="Cadastrar"
+				action="#{garcomBean.GarcomCreate}" />
+
 		</h:form>
-		
-		
+
 		<h:form id="formBuscaGarcom" class="formLogin">
-		
-			<h1> Buscar Garçom</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="nome" value="#{GarcomBean.nomeGarcom}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
-			</h:inputText>    
-			
-			                  
-	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.GarcomSearch}"/>
-						   
+
+			<h1>Buscar Garçom</h1>
+			<h2>Nome :</h2>
+			<h:inputText class="campoInputCadastro" id="nome"
+				value="#{garcomBean.nomeGarcom}">
+				<f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
+			</h:inputText>
+
+
+			<h:commandButton class="botao form-botao" value="Buscar"
+				action="#{garcomBean.GarcomSearch}" />
+
 		</h:form>
-		
-		
+
+		<h:form id="formEditaGarcom" class="formLogin">
+
+			<h1>Edição Garçom</h1>
+			<h2>ID :</h2>
+			<h:inputText class="campoInputCadastro" id="idGarcom"
+				value="#{garcomBean.idGarcom}">
+				<f:passThroughAttribute name="placeholder" value="ID do Garçom" />
+			</h:inputText>
+			<h2>Nome :</h2>
+
+			<h:inputText class="campoInputCadastro" id="nome"
+				value="#{garcomBean.nomeGarcom}">
+				<f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
+			</h:inputText>
+
+			<h:commandButton class="botao form-botao" value="Editar"
+				action="#{garcomBean.GarcomUpdate}" />
+
+
+
+		</h:form>
+
+
 		<h:form id="formExcluiGarcom" class="formLogin">
-		
-			<h1> Excluir Garçom</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="nome" value="#{GarcomBean.nomeGarcom}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
-			</h:inputText>    
-			
-			                  
-	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.GarcomDelete}"/>
-						   
-		</h:form> -->
-		
-		
-	
-		
-		
-</div>
-	
+
+			<h1>Excluir Garçom</h1>
+			<h2>ID :</h2>
+			<h:inputText class="campoInputCadastro" id="nome"
+				value="#{garcomBean.idGarcom}">
+				<f:passThroughAttribute name="placeholder" value="ID do Garçom" />
+			</h:inputText>
+
+
+			<h:commandButton class="botao form-botao" value="Excluir"
+				action="#{garcomBean.GarcomDelete}" />
+
+		</h:form>
+
+
+
+
+
+	</div>
+
 </ui:composition>

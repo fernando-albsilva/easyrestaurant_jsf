@@ -4,11 +4,17 @@ public class Garcom {
 
 	private String id_garcom;
 	private String nome;
-	
-	public Garcom () {}
-	
-	public Garcom (String nome) {
-	 this.setNome(nome);
+
+	public Garcom() {
+	}
+
+	public Garcom(String nome, String id) {
+		this.setNome(nome);
+		this.setId_garcom(id);
+	}
+
+	public Garcom(String nome) {
+		this.setNome(nome);
 	}
 
 	public String getId_garcom() {
@@ -26,5 +32,5 @@ public class Garcom {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 }

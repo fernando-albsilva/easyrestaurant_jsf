@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<faces-config 	
+<faces-config 
 xmlns="http://xmlns.jcp.org/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
@@ -27,6 +27,21 @@ xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	<managed-bean>
 		<managed-bean-name>garcomBean</managed-bean-name>
 		<managed-bean-class>control.GarcomBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>usuarioBean</managed-bean-name>
+		<managed-bean-class>control.UsuarioBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>produtoBean</managed-bean-name>
+		<managed-bean-class>control.ProdutoBean</managed-bean-class>
+		<managed-bean-scope>application</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>gerenciamentoMesaBean</managed-bean-name>
+		<managed-bean-class>control.GerenciamentoMesaBean</managed-bean-class>
 		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 </faces-config>

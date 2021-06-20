@@ -6,71 +6,85 @@
 	xmlns:p="http://primefaces.org/ui">
 
 
-<div id="containerConteudoCentro">
+	<div id="containerConteudoCentro">
 
-				
-		
+
+
 		<h:form id="formCadastroUsuario" class="formLogin">
-		
-			<h1> Cadastro Usuário</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="usuarioNome" value="#{UsuarioBean.nome}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
-			</h:inputText>    
-			
-			 <h:inputText  class="campoInputCadastro" id="usuarioSenha" value="#{UsuarioBean.Senha}"  >
-				    <f:passThroughAttribute name="placeholder" value="Senha" />
-			</h:inputText>    
-			                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{UsuarioBean.gravar}"/>
-						   
-		</h:form>
-	
-		
-		<h:form id="formEditaUsuario" class="formLogin">
-		
-			<h1> Edição Usuário</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="usuarioNome" value="#{UsuarioBean.nome}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Garçom" />
-			</h:inputText>    
-			
-			                  
-	         <h:commandButton class="botao form-botao" value="Editar" action="#{UsuarioBean.gravar}"/>
-			                  
 
-						   
+			<h1>Cadastro Usuário</h1>
+			<h2>Nome :</h2>
+			<h:inputText class="campoInputCadastro" id="usuarioNome"
+				value="#{usuarioBean.nome}">
+				<f:passThroughAttribute name="placeholder" value="Nome do Usuario" />
+			</h:inputText>
+
+			<h:inputSecret class="campoInputCadastro" type="password"
+				id="usuarioSenha" value="#{usuarioBean.senha}">
+				<f:passThroughAttribute name="placeholder" value="password" />
+			</h:inputSecret>
+
+			<h:commandButton class="botao form-botao" value="Cadastrar"
+				action="#{usuarioBean.UsuarioCreate}" />
+
+		</h:form>
+
+		<h:form id="formEditaUsuario" class="formLogin">
+
+			<h1>Edição Usuário</h1>
+
+			<h2>ID :</h2>
+			<h:inputText class="campoInputCadastro" id="usuarioID"
+				value="#{usuarioBean.id_usuario}">
+				<f:passThroughAttribute name="placeholder" value="ID do Usuario" />
+			</h:inputText>
+
+			<h2>Nome :</h2>
+			<h:inputText class="campoInputCadastro" id="usuarioNome"
+				value="#{usuarioBean.nome}">
+				<f:passThroughAttribute name="placeholder" value="Nome do Usuario" />
+			</h:inputText>
+
+			<h:inputSecret class="campoInputCadastro" type="password"
+				id="usuarioSenha" value="#{usuarioBean.senha}">
+				<f:passThroughAttribute name="placeholder" value="password" />
+			</h:inputSecret>
+
+			<h:commandButton class="botao form-botao" value="Editar"
+				action="#{usuarioBean.UsuarioUpdate}" />
+
+
+
 		</h:form>
 		
-		
-		<h:form id="formBuscaGarcom" class="formLogin">
+		<h:form id="formBuscaUsuario" class="formLogin">
 		
 			<h1> Buscar Usuário</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="usuarioNome" value="#{UsuarioBean.nome}"  >
+			<h2> nome :</h2>
+	         <h:inputText  class="campoInputCadastro" id="usuarioNome" value="#{usuarioBean.nome}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Usuário" />
 			</h:inputText>    
 			
 			                  
-	         <h:commandButton class="botao form-botao" value="Buscar" action="#{GarcomBean.buscar}"/>
+	         <h:commandButton class="botao form-botao" value="Buscar" action="#{usuarioBean.UsuarioSearch}"/>
 						   
 		</h:form>
 		
-		
-		<h:form id="formExcluiUsuário" class="formLogin">
+
+<h:form id="formExcluiUsuário" class="formLogin">
 		
 			<h1> Excluir Usuário</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{UsuarioBean.nome}"  >
-				    <f:passThroughAttribute name="placeholder" value="Nome do Usuario" />
+			<h2> ID :</h2>
+	         <h:inputText  class="campoInputCadastro" id="usuarioId" value="#{usuarioBean.id_usuario}"  >
+				    <f:passThroughAttribute name="placeholder" value="ID do Usuario" />
 			</h:inputText>    
 			
 			                  
-	         <h:commandButton class="botao form-botao" value="Buscar" action="#{UsuarioBean.excluir}"/>
+	         <h:commandButton class="botao form-botao" value="Excluir" action="#{usuarioBean.UsuarioDelete}"/>
 						   
 		</h:form>
-		
-		
-</div>
-	
+
+
+	</div>
+
 </ui:composition>

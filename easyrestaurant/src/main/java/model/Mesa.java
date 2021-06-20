@@ -1,16 +1,38 @@
 package model;
 
+import java.util.ArrayList;
+
+
+
 public class Mesa {
 
 	private String numero;
-	private int disponibilidade;
-
-	public Mesa(String numero, int disponibilidade)
-	{
-		setNumero(numero);
-		 //set disponibilidade = 1 ou seja true , então mesa está disponivel set disponibilidade = 0 ouseja false mesa não está disponivel
-		setDisponibilidade(disponibilidade);
+	private String garcom;
+	private String nomeCliente;
+	private ArrayList<Produto> listaProduto = new ArrayList<Produto>();
+	
+	public Mesa() {
 	}
+
+
+	public Mesa(String numero, String garcom, String nomeCliente) {
+		setNumero(numero);
+		// set disponibilidade = 1 ou seja true , então mesa está disponivel set
+		// disponibilidade = 0 ouseja false mesa não está disponivel
+		setGacom(garcom);
+		setNomeCliente(nomeCliente);
+	
+	}
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+
 
 	public String getNumero() {
 		return numero;
@@ -20,11 +42,25 @@ public class Mesa {
 		this.numero = numero;
 	}
 
-	public int getDisponibilidade() {
-		return disponibilidade;
+
+	public String getGarcom() {
+		return garcom;
 	}
 
-	public void setDisponibilidade(int disponibilidade) {
-		this.disponibilidade = disponibilidade;
+	public void setGacom(String garcom) {
+		this.garcom = garcom;
 	}
+	
+	public ArrayList<Produto> getListaProduto() {
+		return listaProduto;
+	}
+
+	public void setListaProduto(Produto produto) {
+		this.listaProduto.add(produto);
+	}
+
+
+
+	
+
 }

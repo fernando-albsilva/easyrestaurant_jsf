@@ -1,14 +1,11 @@
 package dao;
 
-import java.math.BigDecimal;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.List;
 import javax.faces.bean.ApplicationScoped;
 
 import model.Usuario;
@@ -24,17 +21,17 @@ public class UsuarioDAO{
 		this.conexao = _conexao;
 	}
     
-    public Usuario UsuarioSearch() throws  SQLException {
+    public Usuario UsuarioSearch(Usuario usuario) throws  SQLException {
     	
-    	String SQL = "SELECT "
-				+ " id_usuario, nome, senha"
-				+ " FROM usuario";
-		
+    	String SQL = "SELECT id_usuario, nome, senha FROM usuario where nome like ?";
+    	
 		PreparedStatement ps = this.conexao.prepareStatement(SQL);
+		
+		ps.setString(1,"%" + usuario.getNome() + "%" );
 		
 		ResultSet rs = ps.executeQuery();
 		
-		Usuario usuario =new Usuario();
+		
 		
 		while(rs.next()) {
 			

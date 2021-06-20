@@ -6,6 +6,24 @@ public class Usuario {
 	private String nome;
 	private String senha;
 	
+	public Usuario() {}
+	
+	public  Usuario(String nome, String senha) {
+		setNome(nome);
+		setSenha(senha);
+	}
+	public  Usuario(String id,String nome, String senha) {
+		setId_usuario(id);
+		setNome(nome);
+		setSenha(senha);
+	}
+	
+	public  Usuario(String nome) {
+		
+		setNome(nome);
+		
+	}
+	
 	public String getSenha() {
 		return senha;
 	}
@@ -14,7 +32,6 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public Usuario () {}
 
 	public String getId_usuario() {
 		return id_usuario;

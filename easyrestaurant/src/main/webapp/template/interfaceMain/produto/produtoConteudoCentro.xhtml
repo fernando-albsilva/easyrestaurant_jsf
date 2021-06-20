@@ -13,16 +13,23 @@
 		<h:form id="formCadastroProduto" class="formLogin">
 		
 			<h1> Cadastro Produto</h1>
+			
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{livroBean.livro.titulo}"  >
+	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{produtoBean.nome}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Produto" />
 			</h:inputText>    
+			
 			<h2> Valor :</h2>
-	         <h:inputText class="campoInputCadastro"  id="valorProduto" value="#{livroBean.livro.isbn}">
+	         <h:inputText class="campoInputCadastro"  id="valorProduto" value="#{produtoBean.valor}">
+				 <f:passThroughAttribute name="placeholder" value="0.00" />
+			</h:inputText>  	
+			
+			<h2> Custo :</h2>
+	         <h:inputText class="campoInputCadastro"  id="custoProduto" value="#{produtoBean.custo}">
 				 <f:passThroughAttribute name="placeholder" value="0.00" />
 			</h:inputText>  	
 			                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{livroBean.gravar}"/>
+	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{produtoBean.ProdutoCreate}"/>
 						   
 		</h:form>
 	
@@ -30,16 +37,22 @@
 		<h:form id="formEditaProduto" class="formLogin">
 		
 			<h1> Edição Produto</h1>
+			
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{livroBean.livro.titulo}"  >
+	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{produtoBean.nome}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Produto" />
-			</h:inputText>    
+			</h:inputText>  
+			  
 			<h2> Valor :</h2>
-	         <h:inputText class="campoInputCadastro"  id="valorProduto" value="#{livroBean.livro.isbn}">
+	         <h:inputText class="campoInputCadastro"  id="valorProduto" value="#{produtoBean.valor}">
 				 <f:passThroughAttribute name="placeholder" value="0.00" />
 			</h:inputText>  	
-			                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{livroBean.gravar}"/>
+			                
+			 <h2> Custo :</h2>
+	         <h:inputText class="campoInputCadastro"  id="custoProduto" value="#{produtoBean.custo}">
+				 <f:passThroughAttribute name="placeholder" value="0.00" />
+			</h:inputText>    
+	         <h:commandButton class="botao form-botao" value="Editar" action="#{produtoBean.ProdutoUpdate}"/>
 						   
 		</h:form>
 		
@@ -48,15 +61,11 @@
 		
 			<h1> Busca Produto</h1>
 			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{livroBean.livro.titulo}"  >
+	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{produtoBean.nome}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Produto" />
 			</h:inputText>    
-			<h2> Valor :</h2>
-	         <h:inputText class="campoInputCadastro"  id="valorProduto" value="#{livroBean.livro.isbn}">
-				 <f:passThroughAttribute name="placeholder" value="0.00" />
-			</h:inputText>  	
-			                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{livroBean.gravar}"/>
+			
+	         <h:commandButton class="botao form-botao" value="Buscar" action="#{produtoBean.ProdutoSearch}"/>
 						   
 		</h:form>
 		
@@ -64,16 +73,13 @@
 		<h:form id="formExcluiProduto" class="formLogin">
 		
 			<h1> Exclui Produto</h1>
-			<h2> Nome :</h2>
-	         <h:inputText  class="campoInputCadastro" id="produtoNome" value="#{livroBean.livro.titulo}"  >
+			<h2> ID :</h2>
+	         <h:inputText  class="campoInputCadastro" id="produtoID" value="#{produtoBean.id_produto}"  >
 				    <f:passThroughAttribute name="placeholder" value="Nome do Produto" />
 			</h:inputText>    
-			<h2> Valor :</h2>
-	         <h:inputText class="campoInputCadastro"  id="valorProduto" value="#{livroBean.livro.isbn}">
-				 <f:passThroughAttribute name="placeholder" value="0.00" />
-			</h:inputText>  	
+			
 			                  
-	         <h:commandButton class="botao form-botao" value="Cadastrar" action="#{livroBean.gravar}"/>
+	        <h:commandButton class="botao form-botao" value="Excluir" action="#{produtoBean.ProdutoDelete}"/>
 						   
 		</h:form>
 		

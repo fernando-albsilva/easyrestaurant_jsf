@@ -140,5 +140,7 @@ div {
  border:none!important;
 }
 
-
+.displayNone{
+	display: none;
+}
 

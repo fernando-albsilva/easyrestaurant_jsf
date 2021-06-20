@@ -7,31 +7,30 @@ public class Produto {
 	private float valor;
 	private float custo;
 
-	
-	public Produto (String id_produto, String nome, float valor, float custo) {
-		
+	public Produto(String id_produto, String nome, float valor, float custo) {
+
 		setId_produto(id_produto);
 		setNome(nome);
 		setValor(valor);
 		setCusto(custo);
-		
-		
+
 	}
-	
-		public Produto (String nome, float valor, float custo) {
-		
+
+	public Produto(String nome, float valor, float custo) {
+
 		setNome(nome);
 		setValor(valor);
 		setCusto(custo);
-		
-		
+
 	}
-		public Produto () {
-			
-			
-			
-			
-		}
+
+	public Produto(String id) {
+		setId_produto(id);
+	}
+
+	public Produto() {
+
+	}
 
 	public String getId_produto() {
 		return id_produto;
@@ -65,7 +64,4 @@ public class Produto {
 		this.custo = custo;
 	}
 
-
-	
-	
 }

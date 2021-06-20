@@ -1,14 +1,12 @@
 package dao;
 
-import java.math.BigDecimal;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.List;
+
 import javax.faces.bean.ApplicationScoped;
 
 import model.Produto;
@@ -24,18 +22,17 @@ public class ProdutoDAO{
 		this.conexao = _conexao;
 	}
     
-    public Produto ProdutoSearch() throws  SQLException {
+    public Produto ProdutoSearch(Produto produto) throws  SQLException {
     	
-    	String SQL = "SELECT "
-				+ " id_produto, nome, valor, custo"
-				+ " FROM produto";
+    	String SQL = "SELECT id_produto, nome, valor, custo FROM produto where nome like ?";
 		
 		PreparedStatement ps = this.conexao.prepareStatement(SQL);
 		
+		ps.setString(1, "%" + produto.getNome() + "%");
+		
 		ResultSet rs = ps.executeQuery();
 		
-		Produto produto =new Produto();
-		
+				
 		while(rs.next()) {
 			
 			int id = rs.getInt(1);
